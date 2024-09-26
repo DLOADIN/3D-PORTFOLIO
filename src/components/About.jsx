@@ -40,7 +40,7 @@ const About = () => {
         className="mt-4 text-white text-[20px] max-w-3xl leading-[30px] xl:ml-40 sm:ml-0 sm:"
       >
         I'm a skilled software developer with experience in <span className="text-[#915EFF]">TypeScript</span> and
-        <span className="text-[#915EFF]"> JavaScript</span>  and expertise in frameworks like <span className="text-[#915EFF]">React</span>, <span className="text-[#915EFF]">Node.js</span>, and
+        <span className="text-[#915EFF]"> JavaScript</span>  and expertise in frameworks like <span className="text-[#915EFF]">React</span>, <span className="text-[#915EFF]">Node.js</span> and
         currently learning much about <span className="text-[#915EFF]">Three.js</span> and <span className="text-[#915EFF]">Spline</span>. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
