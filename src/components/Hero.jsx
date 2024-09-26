@@ -18,14 +18,14 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Currently building <span className="text-[#915EFF]">& </span>Learning how to craft <br className="sm:block hidden" />
             <span className="text-[#915EFF]">3D </span> visuals, designs, intuitive user
-            interfaces <br className="sm:block hidden" />and developing dynamic <span className="text-[#915EFF]">web</span> applications,
+            interfaces <br className="sm:block hidden" />and developing dynamic <span className="text-[#915EFF]">web</span> applications.
           </p>
         </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className="absolute bottom-10 w-full flex justify-center items-center">
+      <div className="absolute bottom-0 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#915EFF] flex justify-center items-start p-2">
             <motion.div

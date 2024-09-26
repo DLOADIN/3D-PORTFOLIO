@@ -52,7 +52,7 @@ const Navbar = () => {
     </div>
     <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Manzi David&nbsp;
-            <span className='sm:block hidden'> | UI/UX Full-Stack Developer</span>
+            <span className='sm:block hidden'> | WEB DEVELOPER</span>
           </p>  
         </Link>
 
