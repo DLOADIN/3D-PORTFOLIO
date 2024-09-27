@@ -18,12 +18,14 @@ import {
   meta,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+import Thematic from "../assets/company/Thematic.png";
+import Mobalytics from "../assets/company/Mobalytics.png";
+import Upwork from "../assets/company/Upwork.png";
 
 export const navLinks = [
   {
@@ -122,7 +124,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "UPWORK",
-    icon: meta,
+    icon: Upwork,
     iconBg: "#E6DEDD",
     date: " Nov 2022 - Present Day",
     points: [
@@ -133,7 +135,7 @@ const experiences = [
   {
     title: "Business Development and Sales Extern",
     company_name: "THEMATIC",
-    icon: starbucks,
+    icon: Thematic,
     iconBg: "#383E56",
     date: "May 2024 - July 2024",
     points: [
@@ -145,7 +147,7 @@ const experiences = [
   {
     title: "Gaming Genre and Research Extern",
     company_name: "MOBALYTICS",
-    icon: tesla,
+    icon: Mobalytics,
     iconBg: "#E6DEDD",
     date: "Mar 2024 - May 2024",
     points: [
