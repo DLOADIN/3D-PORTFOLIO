@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
+import { SectionWrapper } from "../hoc";
 import { menu, close } from "../assets";
 import logoblack from "../assets/INDIVIDUAL/IMG-20240706-WA0018-photoaidcom-cropped (1).jpg";
 
@@ -106,4 +107,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SectionWrapper(Navbar, "home");
