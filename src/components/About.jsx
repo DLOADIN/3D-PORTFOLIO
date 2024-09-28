@@ -46,11 +46,12 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 ">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center sm:justify-center w-full sm:w-auto">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}

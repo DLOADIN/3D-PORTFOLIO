@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         >
           <div className="relative w-full h-[230px]">
-            
+
           </div>
       </Tilt>
     </motion.div>
@@ -41,10 +41,10 @@ const Works = () => {
     className="mt-3 text-white text-[20px] max-w-3xl leading-[30px]"
   >
     Following <span className="text-[#915EFF]">projects</span> showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
+    real-world examples of my work. Each project is briefly described <span className="text-[#915EFF]">with </span>
     links to code <span className="text-[#915EFF]">repositories</span> and live demos in it. It reflects my
-    ability to solve complex problems, work with different <span className="text-[#915EFF]">technologies</span>,
-    and manage projects effectively.
+    ability to solve complex problems, work with different technologies 
+    and manage projects <span className="text-[#915EFF]">effectively</span>.
   </motion.p>
 </div>
       <div className='mt-20 flex flex-wrap gap-7'>

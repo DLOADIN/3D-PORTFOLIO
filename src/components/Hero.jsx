@@ -11,14 +11,14 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <div className="pb-24">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hola👋,   I'm <span className="text-[#915EFF]">Manzi</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Currently <span className="text-[#915EFF]">building</span> & Learning how to craft <br className="sm:block hidden" />
             <span className="text-[#915EFF]">3D </span> visuals, designs, intuitive <span className="text-[#915EFF]">user </span>
-            interfaces <br className="sm:block hidden" />and developing dynamic web <span className="text-[#915EFF]">applications</span> <br className="sm:block hidden" />and currently enrolled <span className="text-[#915EFF]">at</span> the African Leadership <br className="sm:block hidden" /><span className="text-[#915EFF]">University.</span>
+            interfaces <br className="sm:block hidden" />and developing dynamic web <span className="text-[#915EFF]">applications</span> <br className="sm:block hidden" />and enrolled <span className="text-[#915EFF]">at</span> the African Leadership <br className="sm:block hidden" /><span className="text-[#915EFF]">University.</span>
           </p>
         </div>
       </div>
