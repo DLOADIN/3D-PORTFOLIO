@@ -64,7 +64,7 @@ const About = () => {
 >
        <span>" There is no tomorrow,  and the only easy day was yesterday.  <br></br>
                So today, we create anything we've ever<span className="text-[#915EFF]"> dreamed </span>of "</span><br />
-      <span>~ Unknown Marsoc Raider</span>
+      <span>~ Richard Marcinko </span>
       </motion.blockquote>
     </div>
   );
