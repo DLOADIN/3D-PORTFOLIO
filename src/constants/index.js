@@ -52,7 +52,7 @@ const services = [
     icon: web,
   },
   {
-    title: "JAVASCRIPT FULL-STACK DEVELOPER",
+    title: "JAVASCRIPT STACK DEVELOPER",
     icon: mobile,
   },
   {
@@ -163,67 +163,67 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      " The kid is actually amazing when it comes to understanding customer's needs and figuring out designs that will fit an organisation's criteria. ",
+    name: " Prince Prigaal ",
+    designation: "COO",
+    company: "Kilohills",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      " After David developed an inventory management web-application that helped me to quickly manage my products in store. I can't thank him enough. ",
+    name: " Lisa Kaneza ",
+    designation: "Entrepreneur",
+    company: "4QUARTERS Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      " He did a good job at modelling a figma design that I created as an event management software in my final year at University. ",
+    name: " Timo Klins ",
+    designation: "Software Engineer",
+    company: "IkoRwanda",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Photography Site",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A simple good looking website that showcases the works of organisation called Kilohills. A group of Photographers who exhibit their work both in pictures, artsworks and videos both on Online venues and Physical venues.",
     tags: [
       {
-        name: "react",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Tailwindcss",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/DLOADIN",
   },
   {
-    name: "Job IT",
+    name: "Carepulse",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full-stack web-application that manages appointments between patients and doctors and other patient's data including personal data which also has messaging feature between app admin and users or patients.",
     tags: [
       {
-        name: "react",
+        name: "Next-Js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Restapi",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwindcss",
         color: "pink-text-gradient",
       },
     ],
@@ -231,20 +231,41 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Food Guardian",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive food managing web-application that includes simple CRUD operations, These backend-operations help the application user know what's in the stock, Product deductions and other other complex details that are essential in online business and stock management.",
     tags: [
       {
-        name: "nextjs",
+        name: "PHP",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Phpmyadmin",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A Package management web-application that helps in production monitoring, product consumption and in overall product packaging monitoring using a real-time dashboard and other utilites.",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwindcss",
         color: "pink-text-gradient",
       },
     ],

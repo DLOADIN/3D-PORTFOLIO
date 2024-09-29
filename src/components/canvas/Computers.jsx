@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
@@ -9,16 +9,17 @@ const Computers = ({ isMobile }) => {
       console.error("Error loading GLTF model:", error);
     }
   });
-  const computerRef = React.useRef();
-  useFrame(() => {
+  const computerRef = useRef();
+
+  useFrame((state, delta) => {
     if (computerRef.current) {
-      computerRef.current.rotation.y += 0.05; // Adjust the rotation speed here
+      computerRef.current.rotation.y += delta * 0.5; // Smoother rotation
     }
   });
 
   return (
-    <mesh >
-      <hemisphereLight intensity={0.9} groundColor="black" />
+    <mesh ref={computerRef}>
+      <hemisphereLight intensity={0.75} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -31,7 +32,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.05, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -55,15 +56,16 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className="w-full h-full"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={true}
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

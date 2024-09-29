@@ -21,6 +21,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
         >
           <div className="relative w-full h-[230px]">
+            <img 
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+
+          <div className="absolute inset-0 flex justify-center items-center m-3 sm:m-1 card-img_hover w-full h-full">
 
           </div>
       </Tilt>
@@ -47,7 +55,7 @@ const Works = () => {
     and manage projects <span className="text-[#915EFF]">effectively</span>.
   </motion.p>
 </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+    <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

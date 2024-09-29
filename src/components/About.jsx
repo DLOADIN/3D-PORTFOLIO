@@ -55,16 +55,16 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-10 text-white text-[40px] max-w-3xl  text-center leading-[30px] xl:ml-52 sm:ml-0 sm:"
+        className="mt-10 text-white text-[40px] max-w-3xl text-center leading-[30px] xl:ml-52 sm:ml-0 sm:"
       >
-        MY REASON WHY:
+        A LITTLE QUOTE:
         </motion.p>  
         <motion.blockquote
   variants={fadeIn("", "", 0.1, 1)}
   className="mt-10 text-white text-[24px] max-w-3xl leading-[36px] xl:ml-40 sm:ml-0 italic font-semibold border-l-4 border-[#915EFF] pl-4"
 >
        <span>" There is no tomorrow,  and the only easy day was yesterday.  <br></br>
-               So today, we create anything we've ever<span className="text-[#915EFF]"> dreamed </span>of "</span><br />
+               So we got today and only today to create anything and everything we've ever<span className="text-[#915EFF]"> dreamed </span>of "</span><br />
       <span>~ Richard Marcinko </span>
       </motion.blockquote>
     </div>
