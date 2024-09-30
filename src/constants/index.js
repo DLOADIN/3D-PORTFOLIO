@@ -26,6 +26,18 @@ import {
 import Thematic from "../assets/company/Thematic.png";
 import Mobalytics from "../assets/company/Mobalytics.png";
 import Upwork from "../assets/company/Upwork.png";
+import nextjs from "../assets/company/nextjs.png";
+import foodguardian from "../assets/WEBSITE/Capture-1.png";
+import kilohills from "../assets/WEBSITE/Capture-2.png";
+import carepulse from "../assets/WEBSITE/Capture-3.png";
+import packmate from "../assets/WEBSITE/Capture-4.png";
+import femme from "../assets/company/portraits/femme.png"
+import gudman from "../assets/company/portraits/gudman.png"
+import yesman from "../assets/company/portraits/yesman.png"
+import mandown from "../assets/company/portraits/mandown.png"
+import prigaal from "../assets/company/portraits/prigaal.png"
+import mann from "../assets/company/portraits/mann.png"
+
 
 export const navLinks = [
   {
@@ -46,6 +58,7 @@ export const navLinks = [
   },
 ];
 
+
 const services = [
   {
     title: "UI/UX DESIGNER",
@@ -64,6 +77,10 @@ const services = [
     icon: creator,
   },
 ];
+
+
+
+
 
 const technologies = [
   {
@@ -118,7 +135,17 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
 ];
+
+
+
+
+
+
 
 const experiences = [
   {
@@ -160,6 +187,8 @@ const experiences = [
   },
 ];
 
+
+
 const testimonials = [
   {
     testimonial:
@@ -167,7 +196,7 @@ const testimonials = [
     name: " Prince Prigaal ",
     designation: "COO",
     company: "Kilohills",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: prigaal,
   },
   {
     testimonial:
@@ -175,7 +204,7 @@ const testimonials = [
     name: " Lisa Kaneza ",
     designation: "Entrepreneur",
     company: "4QUARTERS Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: femme,
   },
   {
     testimonial:
@@ -183,15 +212,34 @@ const testimonials = [
     name: " Timo Klins ",
     designation: "Software Engineer",
     company: "IkoRwanda",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: mandown,
+  },
+  {
+    testimonial:
+      " Besides just coding. he keeps the vibe fun and light, which makes long coding sessions way more bearable. If you want someone who can both crush it with code and crack a joke ",
+    name: " Hakim Ishimwe ",
+    designation: "Project Manager",
+    company: "IkoRwanda",
+    image: gudman,
+  },
+  {
+    testimonial:
+      " I had the pleasure of working alongside Manzi on several projects, and I can confidently say he’s one of the most talented developers I’ve encountered. His ability to tackle complex problems with innovative solutions is impressive.",
+    name: " Gashema Arnaud",
+    designation: "Software Engineer",
+    company: "IkoRwanda",
+    image: mann,
   },
 ];
 
+
+
+
 const projects = [
   {
-    name: "Photography Site",
+    name: "Kilohills site",
     description:
-      "A simple good looking website that showcases the works of organisation called Kilohills. A group of Photographers who exhibit their work both in pictures, artsworks and videos both on Online venues and Physical venues.",
+      "A stunning good looking Photography website that showcases the works of a photography company called Kilohills. A group of Photographers who exhibit their work both in pictures, artsworks and videos both on Online venues and Physical venues.",
     tags: [
       {
         name: "React JS",
@@ -202,13 +250,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/DLOADIN",
+    image: kilohills,
+    source_code_link: "https://www.kilohills.com",
+    source_my_link: "https://www.kilohills.com",
   },
   {
     name: "Carepulse",
     description:
-      "A full-stack web-application that manages appointments between patients and doctors and other patient's data including personal data which also has messaging feature between app admin and users or patients.",
+      "A full stack web-application that manages appointments between patients and doctors and other patient's data including personal data which also has messaging feature between app admin and users or patients.",
     tags: [
       {
         name: "Next-Js",
@@ -227,13 +276,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: carepulse,
+    source_code_link: "https://github.com/DLOADIN/carepulse",
+    source_my_link: "https://carepulse-amber.vercel.app/"
   },
   {
     name: "Food Guardian",
     description:
-      "A comprehensive food managing web-application that includes simple CRUD operations, These backend-operations help the application user know what's in the stock, Product deductions and other other complex details that are essential in online business and stock management.",
+      "A comprehensive food managing web-application that includes CRUD operations. These backend-operations help the application user know what's in the stock, Product deductions and other other complex details that are essential in online business and stock management.",
     tags: [
       {
         name: "PHP",
@@ -248,20 +298,21 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: foodguardian,
+    source_code_link: "https://github.com/DLOADIN/FOOD-GUARDIAN-SYSTEM",
+    source_my_link: "https://github.com/DLOADIN/FOOD-GUARDIAN-SYSTEM",
   },
   {
-    name: "Trip Guide",
+    name: "Packmate Pro",
     description:
       "A Package management web-application that helps in production monitoring, product consumption and in overall product packaging monitoring using a real-time dashboard and other utilites.",
     tags: [
       {
-        name: "Nextjs",
+        name: "Php",
         color: "blue-text-gradient",
       },
       {
-        name: "Appwrite",
+        name: "Phpmyadmin",
         color: "green-text-gradient",
       },
       {
@@ -269,9 +320,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: packmate,
+    source_code_link: "https://github.com/DLOADIN/packmate-pro",
+    source_my_link: "https://github.com/DLOADIN/packmate-pro",
   },
 ];
+
+
 
 export { services, technologies, experiences, testimonials, projects };

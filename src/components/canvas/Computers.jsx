@@ -13,7 +13,7 @@ const Computers = ({ isMobile }) => {
 
   useFrame((state, delta) => {
     if (computerRef.current) {
-      computerRef.current.rotation.y += delta * 0.5; // Smoother rotation
+      computerRef.current.rotation.y += delta * 0.5; 
     }
   });
 

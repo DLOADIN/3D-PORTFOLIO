@@ -6,9 +6,11 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from "react-parallax-tilt";
+import arrow from "../assets/company/arrow.png";
+import { p } from 'framer-motion/client';
 
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) =>{
+const ProjectCard = ({ index, name, description, tags, image, source_code_link,source_my_link }) =>{
   return(
     <motion.div variants={fadeIn("up","spring",index * 0.5, 0.75)}>
       <Tilt 
@@ -28,8 +30,34 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             />
           </div>
 
-          <div className="absolute inset-0 flex justify-center items-center m-3 sm:m-1 card-img_hover w-full h-full">
+          <div className="absolute inset-0 flex justify-end  m-3 sm:m-1 card-img_hover w-full h-full">
+            <div 
+                onClick={()=> window.open(source_my_link,"_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+                <img 
+                  src={arrow} 
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"/>
+            </div>
+            <div 
+                onClick={()=> window.open(source_code_link,"_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+                <img 
+                  src={github} 
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"/>
+            </div>
+          </div>
 
+          <div className="mt-5">
+            <h3 className="font-bold text-[22px]">{name}</h3>
+            <h5 className='mt-2 text-white'>{description}</h5>
+          </div>
+
+          <div className='mt-4 flex flex-wrap gap-2'>
+              {tags.map((tag) =>(
+                <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
+              ))}
           </div>
       </Tilt>
     </motion.div>
@@ -48,7 +76,7 @@ const Works = () => {
     variants={fadeIn("", "", 0.2, 1)}
     className="mt-3 text-white text-[20px] max-w-3xl leading-[30px]"
   >
-    Following <span className="text-[#915EFF]">projects</span> showcases my skills and experience through
+    As of 2024 These are the Following <span className="text-[#915EFF]">projects </span>that showcase my skills and experience through
     real-world examples of my work. Each project is briefly described <span className="text-[#915EFF]">with </span>
     links to code <span className="text-[#915EFF]">repositories</span> and live demos in it. It reflects my
     ability to solve complex problems, work with different technologies 
