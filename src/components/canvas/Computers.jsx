@@ -13,7 +13,7 @@ const Computers = ({ isMobile }) => {
 
   useFrame((state, delta) => {
     if (computerRef.current) {
-      computerRef.current.rotation.y += delta * 0.5; 
+      computerRef.current.rotation.y += delta * 0.5;
     }
   });
 
@@ -45,11 +45,11 @@ const ComputersCanvas = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
-    
+
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-    
+
     mediaQuery.addEventListener("change", handleMediaQueryChange);
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
@@ -60,10 +60,10 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="always"
       shadows
-      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
       className="w-full h-full"
+      id="computers-canvas"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -73,7 +73,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
