@@ -32,10 +32,14 @@ const Links = () => {
         </a>
       </div>
     </div>
-    <div className='flex justify-between px-10 py-2'>
-      <h5 className='pl-7'>This site was rendered in  <code className="text-[#915EFF]">React JS </code> with the <code className="text-[#915EFF]"> three.js</code> library by David</h5>
-      <p>© 2024 ALL RIGHTS RESERVED</p>
-  </div>
+    <div className='flex flex-col md:flex-row justify-between items-center px-10 py-2'>
+        <h5 className='pl-7 text-center md:text-left'>
+        This site was rendered in <code className="text-[#915EFF]">React JS</code> with the <code className="text-[#915EFF]">three.js</code> library by David
+      </h5>
+      <p className='text-center md:text-right mt-4 md:mt-0'>© 2024 ALL RIGHTS RESERVED</p>
+    </div>
+
+
   </>
   );
 };

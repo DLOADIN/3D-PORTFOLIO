@@ -16,10 +16,10 @@ const Hero = () => {
             Hola👋, I'm <span className="text-[#915EFF]">Manzi</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Currently <span className="text-[#915EFF]">building</span> & Learning how to craft<br></br>
+            Currently <span className="text-[#915EFF]">building</span> & Learning how to craft<br />
             <span className="text-[#915EFF]">3D</span> visuals, designs, intuitive{" "}
-            <span className="text-[#915EFF]">user</span> interfaces <br></br>and developing 
-            dynamic web <span className="text-[#915EFF]">applications</span>.<br></br> Enrolled{" "}
+            <span className="text-[#915EFF]">user</span> interfaces <br />and developing 
+            dynamic web <span className="text-[#915EFF]">applications</span>.<br /> Enrolled{" "}
             <span className="text-[#915EFF]">at</span> the African Leadership{" "}
             <span className="text-[#915EFF]">University.</span>
           </p>
@@ -31,7 +31,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center hidden sm:flex">
-                <a href="#about">
+        <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#915EFF] flex justify-center items-start p-2">
             <motion.div
               animate={{
