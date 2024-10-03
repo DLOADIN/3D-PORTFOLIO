@@ -30,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 ${
+        scrolled ? "bg-slate-900 bg-opacity-30" : "bg-transparent"
       }`}
       >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -53,7 +53,7 @@ const Navbar = () => {
     </div>
     <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Manzi David&nbsp;
-            <span className='sm:block hidden'> | WEB DEVELOPER</span>
+            <span className='sm:block hidden'> | UI/UX DESIGNER</span>
           </p>  
         </Link>
 

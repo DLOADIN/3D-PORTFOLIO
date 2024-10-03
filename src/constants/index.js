@@ -200,7 +200,7 @@ const testimonials = [
   },
   {
     testimonial:
-      " After David developed an inventory management web-application that helped me to quickly manage my products in store. I can't thank him enough. ",
+      " After David developed an inventory management web-application that helped me to quickly manage my products in the store; I knew I had my shop's stockage installed in my personal computer. I can't thank him enough. ",
     name: " Lisa Kaneza ",
     designation: "Entrepreneur",
     company: "4QUARTERS Enterprises",
