@@ -26,10 +26,6 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 top-[350px] md:top-[250px] w-full h-[calc(100vh-350px)] md:h-[calc(100vh-250px)]">
-        <ComputersCanvas />
-      </div>
-
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center hidden sm:flex">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#915EFF] flex justify-center items-start p-2">
