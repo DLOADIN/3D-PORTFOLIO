@@ -32,7 +32,7 @@ const About = () => {
     <div className="max-w-7xl mx-auto relative z-0">
       <motion.div variants={textVariant()} initial="hidden" animate="visible" className="text-center">
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>OVERVIEW</h2>
       </motion.div>
 
       <motion.p
