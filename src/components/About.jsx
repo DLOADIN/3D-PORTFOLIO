@@ -30,14 +30,14 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <div className="max-w-7xl mx-auto relative z-0">
-      <motion.div variants={textVariant()} initial="hidden" animate="visible">
+      <motion.div variants={textVariant()} initial="hidden" animate="visible" className="text-center">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-white text-[20px] max-w-3xl leading-[30px] xl:ml-40 sm:ml-0 sm:"
+        className=" text-white text-[20px] max-w-3xl leading-[30px] xl:ml-40 sm:ml-0 sm:"
       >
         I'm a skilled software developer with experience in <span className="text-[#915EFF]">TypeScript</span> and
         <span className="text-[#915EFF]"> JavaScript</span>  and expertise in frameworks like <span className="text-[#915EFF]">React</span>, <span className="text-[#915EFF]">Node.js</span> and

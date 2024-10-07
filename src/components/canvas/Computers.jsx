@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
@@ -11,11 +11,15 @@ const Computers = ({ isMobile }) => {
   });
   const computerRef = useRef();
 
-  useFrame((state, delta) => {
-    if (computerRef.current) {
-      computerRef.current.rotation.y += delta * 0.5;
-    }
-  });
+  useEffect(() => {
+    const animate = () => {
+      if (computerRef.current) {
+        computerRef.current.rotation.y += 0.01;
+      }
+      requestAnimationFrame(animate);
+    };
+    animate();
+  }, []);
 
   return (
     <mesh ref={computerRef}>
@@ -41,6 +45,7 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const controlsRef = useRef();
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -58,7 +63,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="always"
+      frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
@@ -66,14 +71,13 @@ const ComputersCanvas = () => {
       id="computers-canvas"
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+        <OrbitControls 
+        ref={controlsRef} 
+        enableZoom={false} 
+        maxPolarAngle={Math.PI / 2} 
+        minPolarAngle={Math.PI / 2} />
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all />
     </Canvas>
   );
 };
