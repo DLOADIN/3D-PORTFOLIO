@@ -30,7 +30,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <div className="max-w-7xl mx-auto relative z-0">
-      <motion.div variants={textVariant()} initial="hidden" animate="visible" className="text-center">
+      <motion.div variants={textVariant()} animate="visible" className="text-center">
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>OVERVIEW</h2>
       </motion.div>
