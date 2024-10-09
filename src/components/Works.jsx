@@ -1,69 +1,73 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { styles } from '../styles'
-import { github } from '../assets'
+import React from 'react' 
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { github } from '../assets';
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from "react-parallax-tilt";
 import arrow from "../assets/company/arrow.png";
-import { p } from 'framer-motion/client';
 
-
-const ProjectCard = ({ index, name, description, tags, image, source_code_link,source_my_link }) =>{
-  return(
-    <motion.div variants={fadeIn("up","spring",index * 0.5, 0.75)}>
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, source_my_link }) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt 
-      options={
-        {
-          max:45,
-          scale:1,
-          speed:450
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-        >
-          <div className="relative w-full h-[230px]">
+      >
+        <div className="relative w-full h-[230px]">
+          <img 
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          />
+        </div>
+
+        <div className="absolute inset-0 flex justify-end m-3 sm:m-1 card-img_hover w-full h-full">
+          <div 
+            onClick={() => window.open(source_my_link, "_blank")}
+            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+          >
             <img 
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
+              src={arrow} 
+              alt="arrow"
+              className="w-1/2 h-1/2 object-contain"
             />
           </div>
-
-          <div className="absolute inset-0 flex justify-end  m-3 sm:m-1 card-img_hover w-full h-full">
-            <div 
-                onClick={()=> window.open(source_my_link,"_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                <img 
-                  src={arrow} 
-                  alt="github"
-                  className="w-1/2 h-1/2 object-contain"/>
-            </div>
-            <div 
-                onClick={()=> window.open(source_code_link,"_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-                <img 
-                  src={github} 
-                  alt="github"
-                  className="w-1/2 h-1/2 object-contain"/>
-            </div>
+          <div 
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+          >
+            <img 
+              src={github} 
+              alt="github"
+              className="w-1/2 h-1/2 object-contain"
+            />
           </div>
+        </div>
 
-          <div className="mt-5">
-            <h3 className="font-bold text-[22px]">{name}</h3>
-            <h5 className='mt-2 text-white'>{description}</h5>
-          </div>
+        <div className="mt-5">
+          <h3 className="font-bold text-[22px]">{name}</h3>
+          <h5 className="mt-2 text-white">{description}</h5>
+        </div>
 
-          <div className='mt-4 flex flex-wrap gap-2'>
-              {tags.map((tag) =>(
-                <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
-              ))}
-          </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
+          ))}
+        </div>
       </Tilt>
     </motion.div>
-  )
-}
+  );
+};
+
 const Works = () => {
+  const thisYear = new Date().getFullYear(); // Define thisYear here
+
   return (
     <>
       <motion.div variants={textVariant()} className="text-center">
@@ -72,24 +76,25 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex justify-center items-center">
-  <motion.p
-    variants={fadeIn("", "", 0.2, 1)}
-    className="mt-3 text-white text-[20px] max-w-3xl leading-[30px]"
-  >
-    As of 2024 These are the Following <span className="text-[#915EFF]">projects </span>that showcase my skills and experience through
-    real-world examples of my work. Each project is briefly described <span className="text-[#915EFF]">with </span>
-    links to code <span className="text-[#915EFF]">repositories</span> and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies 
-    and manage projects <span className="text-[#915EFF]">effectively</span>.
-  </motion.p>
-</div>
-    <div className="mt-20 flex flex-wrap gap-7 justify-center">
+        <motion.p
+          variants={fadeIn("", "", 0.2, 1)}
+          className="mt-3 text-white text-[20px] max-w-3xl leading-[30px]"
+        >
+          As of {thisYear}, These are the Following <span className="text-[#915EFF]">projects </span>that showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described <span className="text-[#915EFF]">with </span>
+          links to code <span className="text-[#915EFF]">repositories</span> and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies 
+          and manage projects <span className="text-[#915EFF]">effectively</span>.
+        </motion.p>
+      </div>
+
+      <div className="mt-20 flex flex-wrap gap-7 justify-center">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
 export default SectionWrapper(Works, "");

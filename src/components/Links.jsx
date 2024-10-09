@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Instagram, Linkedin } from 'lucide-react';
 
 const Links = () => {
+  const thisYear = new Date().getFullYear();
   return (
     <>
     <div className="grid items-center justify-center ">
@@ -36,7 +37,7 @@ const Links = () => {
         <h5 className='pl-7 text-center md:text-left'>
         This site was rendered in <code className="text-[#915EFF]">React JS</code> with the <code className="text-[#915EFF]">three.js</code> library by David
       </h5>
-      <p className='text-center md:text-right mt-4 md:mt-0'>© 2024 ALL RIGHTS RESERVED</p>
+      <p className='text-center md:text-right mt-4 md:mt-0'>© {thisYear} ALL RIGHTS RESERVED</p>
     </div>
 
 
