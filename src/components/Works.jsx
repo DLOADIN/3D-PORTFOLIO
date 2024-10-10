@@ -66,7 +66,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
 };
 
 const Works = () => {
-  const thisYear = new Date().getFullYear(); // Define thisYear here
+  const thisYear = new Date().getFullYear(); 
 
   return (
     <>
