@@ -31,7 +31,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 ${
-        scrolled ? "bg-slate-900 bg-opacity-30" : "bg-transparent"
+        scrolled ? "bg-slate-900" : "bg-transparent"
       }`}
       >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -57,19 +57,34 @@ const Navbar = () => {
           </p>  
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {/* <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-[#915EFF] text-[20px] font-medium cursor-pointer`}
+              } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer mr-10`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-        </ul>
+        </ul> */}
+
+<ul className='list-none hidden sm:flex flex-row gap-10'>
+      {navLinks.map((nav) => (
+        <li
+          key={nav.id}
+          className={`${
+            active === nav.title ? "text-white" : "text-secondary"
+          } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer mr-10 relative group`}
+          onClick={() => setActive(nav.title)}
+        >
+          <a href={`#${nav.id}`}>{nav.title}</a>
+          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#915EFF] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+        </li>
+      ))}
+    </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
