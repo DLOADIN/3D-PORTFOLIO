@@ -30,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 transition-all duration-300 ${
         scrolled
-          ? 'bg-white bg-opacity-30 backdrop-blur-md text-white'
-          : 'bg-transparent'
+          ? 'bg-white bg-opacity-30 backdrop-blur-md text-black' 
+          : 'bg-transparent text-[#034983c7]'
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -43,48 +43,37 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-           <div className="w-8 h-8 rounded-full overflow-hidden">
-        <img 
-            src={logoblack} 
-            alt="Logo" 
-            className="w-full h-full object-cover"
-        />
-        
-    </div>
-    <p className='text-[#034983c7] text-[18px] font-bold cursor-pointer flex '>
+          <div className="w-8 h-8 rounded-full overflow-hidden">
+            <img 
+              src={logoblack} 
+              alt="Logo" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className={`${scrolled ? "text-white" : "text-[#034983c7]"} text-[18px] font-bold cursor-pointer flex`}>
             Manzi David&nbsp;
             <span className='sm:block hidden'> | UI/UX DESIGNER</span>
-          </p>  
+          </p>
         </Link>
 
-        {/* <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer mr-10`}
+                active === nav.title
+                  ? "text-[#915EFF]"  // Highlight color for active nav item
+                  : scrolled
+                  ? "text-white"
+                  : "text-[#034983c7]"  // Default text color before scroll
+              } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer relative group`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#915EFF] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
             </li>
           ))}
-        </ul> */}
-
-<ul className='list-none hidden sm:flex flex-row gap-10'>
-      {navLinks.map((nav) => (
-        <li
-          key={nav.id}
-          className={`${
-            active === nav.title ? "text-white" : "text-[#034983c7]"
-          } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer mr-10 relative group`}
-          onClick={() => setActive(nav.title)}
-        >
-          <a href={`#${nav.id}`}>{nav.title}</a>
-          <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#915EFF] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-        </li>
-      ))}
-    </ul>
+        </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -104,7 +93,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-[#915EFF]" : scrolled ? "text-black" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
