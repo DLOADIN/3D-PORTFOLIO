@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -30,8 +30,8 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 transition-all duration-300 ${
         scrolled
-          ? 'bg-white bg-opacity-30 backdrop-blur-md text-black' 
-          : 'bg-transparent text-[#034983c7]'
+          ? 'bg-white bg-opacity-30 backdrop-blur-md' 
+          : 'bg-transparent text-[#30363b]'
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -50,7 +50,7 @@ const Navbar = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className={`${scrolled ? "text-white" : "text-[#034983c7]"} text-[18px] font-bold cursor-pointer flex`}>
+          <p className={`${scrolled ? "text-white" : "text-[#30363b]"} text-[18px] font-bold cursor-pointer flex`}>
             Manzi David&nbsp;
             <span className='sm:block hidden'> | UI/UX DESIGNER</span>
           </p>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   ? "text-[#915EFF]"  // Highlight color for active nav item
                   : scrolled
                   ? "text-white"
-                  : "text-[#034983c7]"  // Default text color before scroll
+                  : "text-[#30363b]"  // Default text color before scroll
               } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer relative group`}
               onClick={() => setActive(nav.title)}
             >
