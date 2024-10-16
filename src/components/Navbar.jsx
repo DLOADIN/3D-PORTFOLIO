@@ -28,12 +28,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 ${
-        scrolled ? "bg-slate-900" : "bg-transparent"
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 transition-all duration-300 ${
+        scrolled
+          ? 'bg-white bg-opacity-30 backdrop-blur-md text-white'
+          : 'bg-transparent'
       }`}
-      >
+    >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
@@ -51,7 +51,7 @@ const Navbar = () => {
         />
         
     </div>
-    <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+    <p className='text-[#034983c7] text-[18px] font-bold cursor-pointer flex '>
             Manzi David&nbsp;
             <span className='sm:block hidden'> | UI/UX DESIGNER</span>
           </p>  
@@ -76,7 +76,7 @@ const Navbar = () => {
         <li
           key={nav.id}
           className={`${
-            active === nav.title ? "text-white" : "text-secondary"
+            active === nav.title ? "text-white" : "text-[#034983c7]"
           } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer mr-10 relative group`}
           onClick={() => setActive(nav.title)}
         >

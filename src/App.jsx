@@ -10,16 +10,15 @@ const App = () => {
           <Hero />
           <About />
           <Experience />
-        </div>
-        
-        <Tech />
+          <Tech />
           <Works />
           <Feedbacks />
+        
         <div className='relative z-0'>
           <Contact />
           <Links />
           <StarsCanvas />
-        </div>
+        </div></div>
       </div>
     </BrowserRouter>
   );
