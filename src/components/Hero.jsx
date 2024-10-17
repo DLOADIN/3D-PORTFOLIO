@@ -11,10 +11,10 @@ const Hero = () => {
         </div>
         
         <div className="z-10 pb-24">
-          <h1 className={`${styles.heroHeadText} text-[#30363b]`}>
+          <h1 className={`${styles.heroHeadText} text-black`}>
             Hola👋, I'm <span className="text-[#915EFF]">Manzi</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-[#30363b]`}>
+          <p className={`${styles.heroSubText} mt-2 text-black`}>
             Currently <span className="text-[#915EFF]">building</span> & Learning how to craft<br />
             <span className="text-[#915EFF]">3D</span> visuals, designs, intuitive{" "}
             <span className="text-[#915EFF]">user</span> interfaces <br />and developing 

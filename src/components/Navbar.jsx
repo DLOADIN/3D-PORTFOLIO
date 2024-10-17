@@ -62,7 +62,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title
-                  ? "text-[#915EFF]"  // Highlight color for active nav item
+                  ? "text-[#915EFF]"  
                   : scrolled
                   ? "text-white"
                   : "text-[#30363b]"  // Default text color before scroll
