@@ -50,7 +50,7 @@ const Navbar = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className={`${scrolled ? "text-white" : "text-[#30363b]"} text-[18px] font-bold cursor-pointer flex`}>
+          <p className={`${scrolled ? "text-white" : "text-black"} text-[18px] font-bold cursor-pointer flex`}>
             Manzi David&nbsp;
             <span className='sm:block hidden'> | UI/UX DESIGNER</span>
           </p>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   ? "text-[#915EFF]"  
                   : scrolled
                   ? "text-white"
-                  : "text-[#30363b]"  // Default text color before scroll
+                  : "text-black" 
               } hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 text-[20px] font-medium cursor-pointer relative group`}
               onClick={() => setActive(nav.title)}
             >
