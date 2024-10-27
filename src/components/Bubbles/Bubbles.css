@@ -1,0 +1,71 @@
+:root {
+  --color-preloader-bg: #fff;
+  --color-dots: #000;
+}
+
+.bubbles-preloader {
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-preloader-bg);
+  z-index: 3000;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out;
+}
+
+.jumping-dots {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  display: inline-block;
+}
+
+.jumping-dots > div {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--color-dots);
+  border-radius: 50%;
+}
+
+.jumping-dots > div:nth-of-type(1) {
+  left: 20px;
+}
+
+.jumping-dots > div:nth-of-type(3) {
+  left: -20px;
+}
+
+.jumping-dots > div {
+  animation: jumping-dots 1.2s infinite ease;
+  animation-delay: 0.2s;
+}
+
+.jumping-dots > div:nth-of-type(1) {
+  animation-delay: 0.4s;
+}
+
+.jumping-dots > div:nth-of-type(3) {
+  animation-delay: 0s;
+}
+
+@keyframes jumping-dots {
+  0% {
+    top: 0;
+  }
+  40% {
+    top: -6px;
+  }
+  80% {
+    top: 0;
+  }
+}
