@@ -8,6 +8,9 @@ module.exports = {
         sans: [ 'San Francisco', 'sans-serif'], 
         custom: ['San Francisco', 'sans-serif'], 
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
