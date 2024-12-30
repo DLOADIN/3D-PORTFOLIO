@@ -37,6 +37,7 @@ import yesman from "../assets/company/portraits/yesman.png"
 import mandown from "../assets/company/portraits/mandown.png"
 import prigaal from "../assets/company/portraits/prigaal.png"
 import mann from "../assets/company/portraits/mann.png"
+import bsbrand from "../assets/WEBSITE/bsbrand.png"
 
 
 export const navLinks = [
@@ -237,6 +238,28 @@ const testimonials = [
 
 const projects = [
   {
+    name: "BS BRAND",
+    description:
+      "A Stunning and good looking multi-business website that showcases the works of the Ben stores. A fashion-brand group of young individual who exceed expectations when it comes to services like tours, cars & apartments rentals, streetwears and other necessities in Rwanda.",
+    tags: [
+      {
+        name: "Next JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Prisma ORM",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: bsbrand,
+    source_code_link: "https://benstores.vercel.app/",
+    source_my_link: "https://benstores.vercel.app/",
+  },
+  ,{
     name: "Kilohills site",
     description:
       "A stunning good looking Photography website that showcases the works of a photography company called Kilohills. A group of Photographers who exhibit their work both in pictures, artsworks and videos both on Online venues and Physical venues.",

@@ -37,11 +37,11 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className=" text-white text-[20px] max-w-3xl leading-[30px] xl:ml-40 sm:ml-0 sm:"
+        className=" text-black font-extralight text-[20px] max-w-3xl leading-[30px] xl:ml-40 sm:ml-0 sm:"
       >
-        I'm a skilled software developer with experience in <span className="text-[#915EFF]">TypeScript</span> and
-        <span className="text-[#915EFF]"> JavaScript</span>  and expertise in frameworks like <span className="text-[#915EFF]">React</span>, <span className="text-[#915EFF]">Node.js</span> and
-        currently learning much about <span className="text-[#915EFF]">Three.js</span> and <span className="text-[#915EFF]">Spline</span>. I'm a quick learner and collaborate closely with clients to
+        I'm a skilled software developer with experience in <span className="font-semibold text-[#915EFF]">TypeScript</span> and
+        <span className="text-[#915EFF] font-semibold"> JavaScript</span>  and expertise in frameworks like <span className="text-[#915EFF] font-semibold">React</span>, <span className="font-semibold text-[#915EFF]">Node.js</span> and
+        currently learning much about <span className="font-semibold text-[#915EFF]">Three.js</span> and <span className="text-[#915EFF] font-semibold">Spline</span>. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
