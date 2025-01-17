@@ -243,12 +243,16 @@ const projects = [
       "A Stunning and good looking multi-business website that showcases the works of the Ben stores. A fashion-brand group of young individual who exceed expectations when it comes to services like tours, cars & apartments rentals, streetwears and other necessities in Rwanda.",
     tags: [
       {
-        name: "Next JS",
+        name: "Next JS 15",
         color: "blue-text-gradient",
       },
       {
         name: "Tailwindcss",
         color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "light-blue-text-gradient",
       },
       {
         name: "Prisma ORM",
