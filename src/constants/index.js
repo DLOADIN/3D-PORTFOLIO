@@ -260,8 +260,8 @@ const projects = [
       },
     ],
     image: bsbrand,
-    source_code_link: "https://benstores.vercel.app/",
-    source_my_link: "https://benstores.vercel.app/",
+    source_code_link: "https://github.com/DLOADIN/ben-stor/tree/main/src",
+    source_my_link: "https://bsbrandstore.com/",
   },
   ,{
     name: "Kilohills site",
