@@ -72,13 +72,13 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()} className="text-center">
         <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>SAMPLE PROJECTS</h2>
+        <h2 className="text-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"	>SAMPLE PROJECTS</h2>
       </motion.div>
 
       <div className="w-full flex justify-center items-center">
         <motion.p
           variants={fadeIn("", "", 0.2, 1)}
-          className="mt-3 text-white text-[20px] max-w-3xl leading-[30px]"
+          className=" text-black text-[20px] max-w-3xl leading-[30px]"
         >
           As of {thisYear}, These are the Following <span className="text-[#915EFF]">projects </span>that showcase my skills and experience through
           real-world examples of my work. Each project is briefly described <span className="text-[#915EFF]">with </span>

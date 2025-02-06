@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`w-full flex items-center justify-center rounded-xl transition-all duration-300 bg-background/80 backdrop-blur-md text-black ${
+    className={`w-full flex items-center justify-center rounded-xl transition-all duration-300 text-black ${
       scrolled
         ? 'bg-white bg-opacity-30 backdrop-blur-md text-black'
         : 'bg-transparent text-[#30363b]'
