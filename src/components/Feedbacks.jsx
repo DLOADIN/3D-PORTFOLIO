@@ -86,7 +86,7 @@ const Feedbacks = () => {
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <div className="text-center">
-          <p className={styles.sectionSubText}>What others say</p>
+          <p className={`text-white ${styles.sectionSubText}`}>What others say</p>
           <h2 className={styles.sectionHeadText}>TESTIMONIALS</h2>
         </div>
       </div>

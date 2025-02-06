@@ -62,7 +62,7 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <div className='text-center'>
-          <p className={styles.sectionSubText}>Get In Touch</p>
+          <p className={`text-white ${styles.sectionSubText}`}>Get In Touch</p>
           <h3 className={styles.sectionHeadText}>CONTACT ME</h3>
         </div>
 
