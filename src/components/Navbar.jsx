@@ -28,11 +28,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed rounded-b-xl top-0 z-20 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white bg-opacity-30 backdrop-blur-md' 
-          : 'bg-transparent text-[#30363b]'
-      }`}
+    className={`w-full flex items-center justify-center rounded-xl transition-all duration-300 bg-background/80 backdrop-blur-md text-black ${
+      scrolled
+        ? 'bg-white bg-opacity-30 backdrop-blur-md text-black'
+        : 'bg-transparent text-[#30363b]'
+    }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -60,9 +60,9 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
+              className={`font-bold ${
                 active === nav.title
-                  ? "text-[#915EFF]"  
+                  ? "text-[#915EFF]"   
                   : scrolled
                   ? "text-white"
                   : "text-black" 
