@@ -7,12 +7,12 @@ const Links = () => {
   return (
     <>
     <div className="grid items-center justify-center ">
-      <div className="flex items-center justify-center mb-2  space-x-4 py-4 bg-black bg-opacity-5 backdrop-brightness-200 rounded-lg shadow-lg">
+      <div className="flex items-center justify-center mb-2 space-x-6 py-4 bg-black bg-opacity-5 backdrop-brightness-200 rounded-lg shadow-lg">
         <a
           href="https://github.com/DLOADIN"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in pr-4 pl-5"
+          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in p-1"
         >
           <Github size={35} />
         </a>
@@ -20,7 +20,7 @@ const Links = () => {
           href="https://www.instagram.com/__m.a.n.zi/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in"
+          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in p-1"
         >
           <Instagram size={35} />
         </a>
@@ -28,7 +28,7 @@ const Links = () => {
           href="https://www.linkedin.com/in/manzi-david-653769299/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in  pl-4 pr-5"
+          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in p-1"
         >
           <Linkedin size={35} />
         </a>
@@ -36,7 +36,7 @@ const Links = () => {
           href="https://www.pinterest.com/jesuisdaviid/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in  pl-4 pr-5"
+          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in p-1"
         >
           <FaPinterest size={35} />
         </a>
