@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Instagram, Linkedin } from 'lucide-react';
+import { Github, Instagram, Linkedin, Pinterest } from 'lucide-react';
 
 const Links = () => {
   const thisYear = new Date().getFullYear();
@@ -30,6 +30,14 @@ const Links = () => {
           className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in  pl-4 pr-5"
         >
           <Linkedin size={35} />
+        </a>
+        <a
+          href="https://www.pinterest.com/jesuisdaviid/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in  pl-4 pr-5"
+        >
+          <Pinterest size={35} />
         </a>
       </div>
     </div>
