@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Instagram, Linkedin, Pinterest } from 'lucide-react';
+import { Github, Instagram, Linkedin } from 'lucide-react';
+import { FaPinterest } from 'react-icons/fa';
 
 const Links = () => {
   const thisYear = new Date().getFullYear();
@@ -37,7 +38,7 @@ const Links = () => {
           rel="noopener noreferrer"
           className="text-black hover:text-[#915EFF] transform hover:scale-110 transition-all duration-500 ease-in  pl-4 pr-5"
         >
-          <Pinterest size={35} />
+          <FaPinterest size={35} />
         </a>
       </div>
     </div>
