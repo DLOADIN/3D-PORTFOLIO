@@ -119,6 +119,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - themanzi.david@gmail.com
+Builder's Name - Manzi David
+Builder's Email - themanzi.david@gmail.com
 
 Project Link: https://github.com/DLOADIN/3D-PORTFOLIO
