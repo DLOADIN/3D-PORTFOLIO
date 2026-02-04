@@ -33,11 +33,14 @@ import carepulse from "../assets/WEBSITE/Capture-3.png";
 import packmate from "../assets/WEBSITE/Capture-4.png";
 import femme from "../assets/company/portraits/femme.png"
 import gudman from "../assets/company/portraits/gudman.png"
-import yesman from "../assets/company/portraits/yesman.png"
 import mandown from "../assets/company/portraits/mandown.png"
 import prigaal from "../assets/company/portraits/prigaal.png"
 import mann from "../assets/company/portraits/mann.png"
 import bsbrand from "../assets/WEBSITE/bsbrand.png"
+import invisible from "../assets/company/invisible_black.jpg"
+import Natcom from "../assets/company/Natcom.png"
+import BICT from "../assets/company/bictt.jfif"
+
 
 
 export const navLinks = [
@@ -150,46 +153,85 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full stack Developer",
+    title: "Agent Operator",
+    company_name: "INVISIBLE TECHNOLOGIES",
+    icon: invisible,
+    iconBg: "#383E56",
+    date: "September 2025 - Present Day",
+    points: [
+      "Evaluate and validate AI-generated outputs against strict operational guidelines to ensure accuracy, consistency, and reliability.",
+      "Analyze multimodal content (video, text, audio) and produce high-quality, structured question & answer pairs for AI model evaluation.",
+      "Apply cultural, contextual, and linguistic reasoning to detect subtle errors, biases, or misinterpretations in AI responses.",
+      "Identify and flag failure modes such as ambiguity mishandling, incomplete reasoning, and culturally inaccurate assumptions.",
+      "Ensure compliance with formatting, language, and task-specific constraints across multilingual workflows (English and French).",
+      "Exercise independent judgment under evolving specifications, prioritizing quality over speed.",
+      "Maintain audit-ready outputs by following documentation standards and reproducible reasoning processes.",
+      "Contribute to improving AI behavior by reinforcing human-aligned reasoning and real-world applicability.",
+    ],
+  },
+  {
+    title: "Freelance Web Developer",
     company_name: "UPWORK",
     icon: Upwork,
     iconBg: "#E6DEDD",
-    date: " Nov 2022 - Present Day",
+    date: "Nov 2022 - September 2025",
     points: [
-      "Developed custom software applications, improving client business processes by up to 40% using the latest technologies in SWE which are React JS, Node Js and a utilizing a good backend service which is MongoDB and Appwrite.",
-      "I also took on some collaborative efforts and learn from other freelancers, including a 3D Animation training.",
+      "Developed custom software applications, improving client business processes by up to 40%.",
+      "Provided guidance and mentorship, fostering 90% client satisfaction.",
+      "Empowered future graduates to explore programming applications.",
     ],
   },
   {
-    title: "Business Development and Sales Extern",
+    title: "Business Development and Sales Intern",
     company_name: "THEMATIC",
     icon: Thematic,
     iconBg: "#383E56",
-    date: "May 2024 - July 2024",
+    date: "May 2024 - December 2024",
     points: [
-      "Identified and sourced potential leads,resulting in a 10% increase in quality leads.",
-      "Articulated Thematic’s unique value proposition and customized cold outreach to leads, achieving a 75% response rate in cold outreach.",
-      "Managed time autonomously to complete multiple projects in an asynchronous an eight-week program,successfully completing 3 key projects.",
+      "Identified and sourced potential leads, resulting in a 10% increase in quality leads.",
+      "Articulated Thematic's unique value proposition and customized cold outreach to leads, achieving a 75% response rate in cold outreach.",
+      "Managed time autonomously to complete multiple projects in an asynchronous eight-week program, successfully completing 3 key projects.",
     ],
   },
   {
-    title: "Gaming Genre and Research Extern",
+    title: "Gaming Research Intern",
     company_name: "MOBALYTICS",
     icon: Mobalytics,
     iconBg: "#E6DEDD",
-    date: "Mar 2024 - May 2024",
+    date: "January 2024 - May 2024",
     points: [
       "Analyzed gaming genres, providing market insights and identifying 15% potential market growth opportunities.",
       "Deeply analyzed game mechanisms, KPIs, revenue models, and player psychology.",
       "Engaged with games for firsthand experience, developing a comprehensive understanding of player behavior, which informed 70% of the research conclusions.",
-      "Chose a genre and conducted detailed research, Summarized research into a compelling presentation,  which received 95% positive feedback from Mobalytics leadership.",
+      "Chose a genre and conducted detailed research, summarized research into a compelling presentation, which received 95% positive feedback from Mobalytics leadership.",
       "Provided actionable recommendations that could potentially enhance market share by 20%.",
     ],
   },
+  {
+    title: "Web Developer Intern",
+    company_name: "NATCOM SERVICES RWANDA",
+    icon: Natcom,
+    iconBg: "#E6DEDD",
+    date: "June 2021 - July 2021",
+    points: [
+      "Assisted in developing web applications, gaining hands-on experience in database management.",
+      "Designed and managed databases, supporting smooth operations of web applications.",
+      "Contributed to integration efforts with Database - Web Hosting - SQL.",
+    ],
+  },
+  {
+    title: "Software Development Intern",
+    company_name: "BICT PROJECT",
+    icon: BICT,
+    iconBg: "#383E56",
+    date: "October 2019 - November 2019",
+    points: [
+      "Assisted in developing software applications, acquiring practical skills in JavaScript, HTML, CSS, and PHP.",
+      "Worked on front-end and back-end development.",
+      "Gained experience in modern tech stacks, including React and MongoDB which contributed to project development and implementation.",
+    ],
+  },
 ];
-
-
-
 const testimonials = [
   {
     testimonial:
